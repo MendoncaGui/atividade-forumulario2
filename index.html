@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container-textos">
+      <h5>Sua entrega em menos de 24 horas!</h5>
+    </div>
+    <div class="container">
+      <form>
+        <h2>Localização</h2>
+        <div class="form-row">
+          <label for="cep">informe o CEP</label>
+          <input type="text" name="cep" id="cep" onkeypress="validateCep()" onkeyup="validateCep()" maxlength="9"/>
+          <div id="message">CEP INVÁLIDO</div>
+        </div>
+
+        <div class="form-row">
+          <label for="Rua">Rua</label>
+          <input type="text" name="Rua" id="rua" disabled  /> 
+        </div>
+
+        <div class="form-row">
+          <label for="Bairro">Bairro</label>
+          <input type="text" name="Bairro" id="bairro" disabled />
+        </div>
+
+        <div class="div-dupla">
+          <label for="UF">UF</label>
+          <input type="text" name="UF" id="uf" disabled />
+        </div>
+
+        <div class="form-row">
+          <label for="Cidade">Cidade</label>
+          <input type="text" name="Cidade" id="cidade" disabled />
+        </div>
+
+        <div class="div-dupla">
+          <label for="DDD">DDD</label>
+          <input type="text" name="DDD" id="ddd" disabled />
+        </div>
+        <div class="form-row">
+          <label for="IBGE">IBGE</label>
+          <input type="text" name="IBGE" id="ibge" disabled />
+        </div>
+      </form>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
